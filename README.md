@@ -1,4 +1,4 @@
-# Paper Rock Scissors Spock Lizard
+# Rock Paper Scissors Spock Lizard
 Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla
 
 <p align="center">
@@ -20,12 +20,9 @@ Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, 
 - Assign the 5 possible options to a list.
 - Assign a variable to the maximum number of games: 1, 3, 5, etc...
 - This time the previously defined function is used
-- Assign a variable to the number of games a player must win to win.
-- Preferably the value will be based on the number of maximum games.
-- Define a function that randomly returns one of the 5 options.
-- This will correspond to the play of the machine. Totally random.
-- Define a function that asks for your choice among the 5 must only allow one of the 5 options. This is defensive programming.
-- If it is not valid, keep asking until it is.
+- Assign a variable to the number of games a player must win to win. Preferably the value will be based on the number of maximum games.
+- Define a function that randomly returns one of the 5 options. This will correspond to the play of the machine. Totally random.
+- Define a function that asks for your choice among the 5 must only allow one of the 5 options. This is defensive programming. If it is not valid, keep asking until it is.
 - Define a function that resolves a combat.
 - Returns 0 if there is a tie, 1 if the machine wins, 2 if the human player wins.
 - Define a function that shows the choice of each player and the state of the game
