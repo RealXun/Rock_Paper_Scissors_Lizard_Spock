@@ -1,6 +1,8 @@
 #Defne conditions to use later.
 # Number is odd
 # Number is equal or greater than 3
+import sys #this will be used to end a loop when reached the max_rounds that were wanted to be played
+import random
 
 def is_odd(first_input):
     if first_input % 2 != 0:
@@ -14,7 +16,28 @@ def is_more_or_equal_1(first_input):
     else:
         return False
 
-#We start and infinite while
+# Computer chooses randomly any number
+# among 1 , 2 and 3. Using randint method of random module
+#randomly returns one of the 3 options for the machines
+def machine_choose():
+    import random
+    options = ["rock", "paper", "scissors", "lizard", "spock"]
+    random = random.randint(0, 4)
+    return options[random]
+
+def user_choose (option):
+    if option == 1:
+        return "rock"
+    elif option == 2:
+        return "paper"
+    elif option == 3:
+        return "scissors"
+    elif option == 4:
+        return "spock"
+    elif option == 5:
+        return "lizard"
+
+#We start an infinite while
 print("""How to Play Rock, Paper, Scissors, Lizard, Spock:
 
          Rock smashes scissors, and rock smashes lizard.
@@ -35,42 +58,19 @@ while 1:
         games_left  = max_rounds-1 #How many rounds left
         
         while played < max_rounds:
-            import sys #this will be used to end a loop when reached the max_rounds that were wanted to be played
-            import random
-            # Computer chooses randomly any number
-            # among 1 , 2 and 3. Using randint method of random module
-            random = random.randint(0, 4) #randomly returns one of the 3 options for the machines
-           
-            print("\nHere are the options:\n1)rock","\n2)paper","\n3)scissors","\n4)spock","\n5)lizard")
-            if random == 0:
-                machine = "rock"
-            elif random == 1:
-                machine = "paper"
-            elif random == 2:
-                machine = "scissors"
-            elif random == 3:
-                machine = "spock"
-            elif random == 4:
-                machine = "lizard"
+
+            #we called the machine_choose function
+            machine=machine_choose()
             
+            print("\nHere are the options:\n1)rock","\n2)paper","\n3)scissors","\n4)spock","\n5)lizard")
             option = int(input("\nWrite the number of what you wanna use.:"))
             
             while option > 5 or option==0: #When player choose an option it should be 1, 2 or 3, if not it gives a message to pick again
                 print("Incorrect option.")# pick again
-            
-            # initialize value of user variable
-            # corresponding to the option value 
-            if option == 1:
-                user = "rock"
-            elif option == 2:
-                user = "paper"
-            elif option == 3:
-                user = "scissors"
-            elif option == 4:
-                user = "spock"
-            elif option == 5:
-                user = "lizard"
-            
+
+            #we called the user_choose function
+            user=user_choose(option)
+
             #Here I show what user and machine did choose
             print("\nYou choose: ", user)
             print("The machine has chosen: ", machine)
