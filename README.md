@@ -2,7 +2,7 @@
 Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla
 
 <p align="center">
-    <img src="https://github.com/RealXun/Paper_Rock_Scissors_Spock_Lizard/blob/main/Resources/Cover.png">
+    <img src="https://github.com/RealXun/Paper_Rock_Scissors_Spock_Lizard/blob/main/Resources/Cover.png"alt="drawing" width="300">
 
 ## Objectives
 1. Loop Usage
