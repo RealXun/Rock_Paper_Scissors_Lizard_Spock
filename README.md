@@ -4,6 +4,12 @@ Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, 
 <p align="center">
     <img src="https://github.com/RealXun/Paper_Rock_Scissors_Spock_Lizard/blob/main/Resources/Cover.png"alt="drawing" width="300">
 
+## Updates
+
+Rock_Paper_Scissors_Lizard_Spock V2 now contains:
+- def user_choose
+- def machine_choose
+
 ## Objectives
 1. Loop Usage
 2. Data capture by console
